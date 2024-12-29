@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ee361ff45.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Business Navbar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Website Logo -->
+      <div class="logo">
+        <img
+          src="images/logo.jpg"
+          alt="TechCrunch"
+          width="140px"
+          style="border-radius: 20px"
+        />
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." name="q" id="search" />
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <!-- Actions (Buttons and Profile) -->
+      <div class="actions">
+        <button>Login</button>
+        <button>Sign Up</button>
+        <div class="profile">
+          <img src="images/Meraj.jpg" alt="Profile Photo" />
+        </div>
+        <button class="menu-button" id="menuButton">☰</button>
+      </div>
+    </nav>
+
+    <!-- Sliding Menu -->
+    <div class="slide-menu" id="slideMenu">
+      <button class="close-btn" id="closeButton">✕</button>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer">Feedback</a></li>
+      </ul>
+    </div>
+    <section id="hero" class="hero">
+      <!-- Content Section -->
+      <div class="content">
+        <h1>Welcome to TechCrunch</h1>
+        <p>
+          Gadgets simplify daily tasks, making processes faster and more
+          efficient. For example, smartphones combine communication, internet
+          access, and productivity tools in one device. Smart appliances (e.g.,
+          robotic vacuum cleaners, smart thermostats) reduce effort in managing
+          household chores. Enhanced Communication: Devices like smartphones,
+          laptops, and tablets have revolutionized how we connect globally,
+          enabling instant communication via calls, texts, emails, or video
+          conferencing. Access to Information:
+        </p>
+        <a href="#learn-more" class="cta">Get Started</a>
+      </div>
+
+      <!-- Image Section -->
+      <div class="image">
+        <img src="images/home.webp" alt="Business Model Image" />
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>Why Choose Us?</h2>
+      <p>
+        We provide innovative solutions that empower businesses to succeed in
+        the modern world. Here's what makes us stand out:
+      </p>
+      <div class="about-cards">
+        <!-- Card 1 -->
+        <div class="about-card">
+          <div class="icon">💡</div>
+          <h3>Innovative Ideas</h3>
+          <p>
+            We bring creative and practical strategies to help your business
+            grow.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="about-card">
+          <div class="icon">🌐</div>
+          <h3>Global Reach</h3>
+          <p>
+            Expand your reach with our globally focused solutions and support.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="about-card">
+          <div class="icon">⚙️</div>
+          <h3>Advanced Technology</h3>
+          <p>
+            Our tools and platforms use cutting-edge technology to give you an
+            edge.
+          </p>
+        </div>
+        <!-- Card 4 -->
+        <div class="about-card">
+          <div class="icon">🤝</div>
+          <h3>Trusted Support</h3>
+          <p>We work alongside you every step of the way with 24/7 support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <!-- Content Section -->
+      <div class="content">
+        <h2>About Our Business</h2>
+        <p>
+          At <strong>BizBrand</strong>, we turn your vision into reality with
+          cutting-edge strategies, innovative solutions, and unparalleled
+          expertise. Our mission is to empower businesses worldwide by
+          delivering results that matter. With a team of dedicated
+          professionals, we focus on building sustainable growth, global reach,
+          and transformative success.
+        </p>
+        <a href="#learn-more" class="cta">Learn More</a>
+      </div>
+
+      <!-- GIF Section -->
+      <div class="gif">/></div>
+    </section>
+
+    <div class="section">
+      <h1 style="text-align: center; margin-bottom: 30px">Our Products</h1>
+
+      <div class="cards-container">
+        <div
+          class="card"
+          onclick="showPopup('Travel Adapter', 'A plug that connects a piece of electrical equipment brought from one country to the electricity supply in another when they cannot be connected directly, …')"
+        >
+          <img src="images/5.jpg" alt="Product 1" />
+          <h3>Travel Adapter</h3>
+          <p>Click for more details</p>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div
+          class="card"
+          onclick="showPopup('Window Breaker', 'A glass breaker is a hand tool designed to break through a window glass in an emergency. !')"
+        >
+          <img src="images/1.jpg" alt="Product 2" />
+          <h3>Window Breaker</h3>
+          <p>Click for more details</p>
+        </div>
+      </div>
+
+      <div class="cards-container">
+        <!-- Product Card 1 -->
+        <div
+          class="card"
+          onclick="showPopup('Mini Sewing Machine', 'Mini sewing machines are versatile tools primarily used for basic sewing tasks such as repairs, alterations, and small craft projects.')"
+        >
+          <img src="images/2.jpg" alt="Product 1" />
+          <h3>Mini Sewing Machine</h3>
+          <p>Click for more details</p>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div
+          class="card"
+          onclick="showPopup('Plant Carer', 'Other plant-focused careers, such as a landscape architect , design and create beautiful gardens and parks.!')"
+        >
+          <img src="images/3.jpg" alt="Product 2" />
+          <h3>Plant Carer</h3>
+          <p>Click for more details</p>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div
+          class="card"
+          onclick="showPopup('Air Purifier', 'An air purifier or air cleaner is a device which removes contaminants from the air in a room to improve indoor air quality. ')"
+        >
+          <img src="images/4.jpg" alt="Product 3" />
+          <h3>Air Purifier</h3>
+          <p>Click for more details</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="overlay" onclick="hidePopup()"></div>
+    <div class="popup" id="popup">
+      <h2 id="popup-title"></h2>
+      <p id="popup-description"></p>
+      <button onclick="hidePopup()">Close</button>
+    </div>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        We'd love to hear from you! Feel free to reach out with any questions or
+        inquiries.
+      </p>
+
+      <div class="contact-container">
+        <!-- Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <h3>Get In Touch</h3>
+          <div class="info"><span>Email:</span> techcrunch07@gmail.com</div>
+          <div class="info"><span>Phone:</span> +91-912083XXX</div>
+          <div class="info">
+            <span>Address:</span> 123 Business Street, Tech City, Lucknow
+          </div>
+          <div class="info">
+            <span>Follow Us:</span> Facebook | Twitter | LinkedIn
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div id="footer" class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-column">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#">Website Templates</a></li>
+            <li><a href="#">Website Builder</a></li>
+            <li><a href="#">App Market</a></li>
+            <li><a href="#">Mobile App Builder</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+          <h3>Solutions</h3>
+          <ul>
+            <li><a href="#">Online Store</a></li>
+            <li><a href="#">Portfolio Website</a></li>
+            <li><a href="#">eCommerce Website</a></li>
+            <li><a href="#">Professional Tools</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+          <h3>Learn</h3>
+          <ul>
+            <li><a href="#">Privacy & Security</a></li>
+            <li><a href="#">SEO Learning Hub</a></li>
+            <li><a href="#">Wix Blog</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Press & Media</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-media">
+            <a
+              href="https://merajsiddique07.github.io/MyPortfolio/"
+              target="_blank"
+              title="Portfolio"
+              ><i class="fa-solid fa-m"></i
+            ></a>
+            <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a
+              href="https://www.linkedin.com/in/merajsiddique07/"
+              target="_blank"
+              title="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#" title="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 TechCrunch. All rights reserved. |
+          <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+        </p>
+        <p>&copy; Made with &hearts; by Meraj Siddique</p>
+      </div>
+    </footer>
+
+    <script src="jscript.js"></script>
+  </body>
+</html>
